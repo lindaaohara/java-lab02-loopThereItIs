@@ -16,8 +16,12 @@ public class NumberUtilities {
         return null;
     }
 
-    public static String getRange(int start) {
-        return null;
+    public static String getRange(int stop) {
+        String returnedRange = "";
+        for(int currentNumberInRange = 0; currentNumberInRange < stop - 1; currentNumberInRange++){
+            returnedRange = returnedRange + currentNumberInRange;
+        }
+        return returnedRange;
     }
 
     public static String getRange(int start, int stop) {
